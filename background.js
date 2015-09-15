@@ -12,6 +12,11 @@ chrome.browserAction.onClicked.addListener(function(aTab) {
       chrome.tabs.create({'url': 'http://chilloutandwatchsomecatgifs.com/', 'active': true});
     } else {
       // Do something here…
+      chrome.tabs.query({'url': 'http://chilloutandwatchsomecatgifs.com/', 'active': true}, (active) => {
+        if (active.length === 0) {
+          chrome.tabs.update(tabs[0].id, {'active': true});
+        }
+      });
     }
   });
 });
