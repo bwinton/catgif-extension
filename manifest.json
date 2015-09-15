@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "Cat Gifs!",
+  "version": "1.0",
+  "applications": {
+    "gecko": {
+      "id": "catgifs@mozilla.org"
+    }
+  },
+
+  "browser_action": {
+    "default_title": "Cat Gifs!"
+  }
+}
