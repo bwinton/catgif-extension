@@ -1,5 +1,9 @@
 {
   "manifest_version": 2,
+  "icons": {
+    "48": "icon.png",
+    "128": "icon128.png"
+  },
   "name": "Cat Gifs!",
   "version": "1.0",
   "applications": {
@@ -18,6 +22,10 @@
   ],
 
   "browser_action": {
+    "default_icon": {
+      "19": "button.png",
+      "38": "button38.png"
+    },
     "default_title": "Cat Gifs!"
   }
 }
